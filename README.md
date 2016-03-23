@@ -5,7 +5,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Dependency Status][david_img]][david_site]
 
-> My module
+> Determinate whether npm version is 2.
 
 
 ## Install
@@ -20,30 +20,17 @@ $ npm install is-npm2
 ```js
 var isNpm2 = require('is-npm2');
 
-isNpm2('test');
+isNpm2()
+.then(is2 => {
+  console.log(is2); // true or false
+});
 //=>
 ```
 
 
 ## API
 
-### isNpm2(input, [options])
-
-#### input
-
-*Required*
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`
-Default: `false`
-
-Lorem ipsum.
+### isNpm2()
 
 
 ## License
